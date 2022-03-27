@@ -40,3 +40,6 @@ Transformer中的Normalization为layer级别的标准化， 与batch级别的标
 
 ## 训练与预测
 输入数据维度为(N, timestep, feature), 输出维度为与输入维度类似，只是timestep可以任意指定， N和feature与输入数据一致，不妨记为(N, timestep2, feature)， 模型的工作为，前timestep的数据去预测后timestep2个时间的数据。训练优化器多种多样，可以根据喜好来选择优化器, 建模见transformer.py、预测见predict.ipynb
+
+## 结果展示
+<div align=center><img src="https://github.com/GenjiYin/Transformer-/blob/main/filename/output.png"/></div>
