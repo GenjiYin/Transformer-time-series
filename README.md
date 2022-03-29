@@ -31,6 +31,7 @@ Mask机制一般作用在Self-Attention机制当中，更一般的，该机制�
 
 #### Feed forward
 本质为全连接网络，全连接网络的数量与timestep一致，不同timestep之间的全连接网络相互独立， 对于任意一个全连接网络而言，输入数据为(N, feature_number)的二维数据， 共有timestep个这种矩阵。
+<div align=center><img src="https://pic2.zhimg.com/80/v2-ff0f90ebee18dd909999bd3bee38fa45_720w.jpg"/></div>
 
 #### Identity map
 在送入Attention以及Feed forward之前需要对数据做一次恒等映射， 缓解后续模型训练阶段梯度消失的问题：本质依旧是个全连接层， 输出结果与Attention或Feed forward的输出结果相加。
