@@ -30,7 +30,7 @@ Mask机制一般作用在Self-Attention机制当中，更一般的，该机制�
 多头机制， 对每个文本矩阵都取多个Q、K、V矩阵计算出的所有注意力矩阵横向拼接即为多头机制的运算机制。
 
 #### Feed forward
-本质为全连接网络，全连接网络的数量与timestep一致，不同timestep之间的全连接网络相互独立， 对于任意一个全连接网络而言，输入数据为(N, feature_number)的二维数据， 共有timestep个这种矩阵，每个全连接网络是相互独立的。
+本质为全连接网络，全连接网络的数量与timestep一致，不同timestep之间的全连接网络相互独立， 对于任意一个全连接网络而言，输入数据为(N, feature_number)的二维数据， 共有timestep个这种矩阵，在这一层当中，每个全连接网络是相互独立的。
 <div align=center><img src="https://pic2.zhimg.com/80/v2-ff0f90ebee18dd909999bd3bee38fa45_720w.jpg"/></div>
 
 #### Identity map
